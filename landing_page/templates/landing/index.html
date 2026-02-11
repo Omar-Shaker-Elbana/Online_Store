@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StoreHub — Your gate to future</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'landing/style/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'landing/imgs/favicon.png' %}" type="image/x-icon">
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="brand">
+        <img src="{% static 'landing/imgs/logo.png' %}" alt="StoreHub logo" id="logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="#section1">How it Works</a>
+        <a href="#section2">For Merchants</a>
+        <a href="#section3">For Customers</a>
+        <a href="#" class="get-started" style="padding:8px 20px;">Get Started</a>
+      </div>
+    </nav>
+
+    <section class="section1" id="section1">
+      <div class="s1left">
+        <h2>One Platform for <br><span>Selling & Shopping</span></h2>
+        <p>Build your online store or discover trusted merchants</p>
+        <a href="#selling" style="background:#2563EB;margin-right:8px;">Start Selling</a>
+        <a href="#shopping">Start Shopping</a>
+      </div>
+
+      <div class="s1right">
+        <img src="{% static 'landing/imgs/hero.png' %}" alt="hero image">
+      </div>
+    </section>
+  </body>
+</html>

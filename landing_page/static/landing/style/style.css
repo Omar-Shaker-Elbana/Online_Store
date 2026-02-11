@@ -1,0 +1,134 @@
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --muted:#6b7280;
+  --accent:#F59E0B;
+  --accent-strong:rgba(11,114,255,0.12);
+  --radius:10px;
+  --gap:20px;
+  --pad:18px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+    margin:0;background:var(--bg);color:var(--text);font-synthesis:none;
+    animation: ease-in-out fadeIn 1s;
+}
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+nav{
+    
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+  padding:12px 24px;
+  background:var(--bg);
+  box-shadow: 0 1px 6px rgba(16,24,40,0.04);
+}
+
+/* Logo */
+#logo{width:130px;height:auto;display:block;max-width:100%}
+.brand{display:flex;align-items:center;text-decoration:none}
+
+/* Links */
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.nav-links a{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:500;
+  padding:8px 6px;
+ 
+  transition:color .18s ease, background .12s ease, transform .12s ease;
+}
+.nav-links a:hover{color:var(--accent);transform:translateY(-1px)}
+
+
+.get-started{
+  border: 3px solid var(--accent);  
+  color:#fff;
+  
+    
+  box-shadow: 0 6px 18px var(--accent-strong);
+  text-decoration:none;
+  font-weight:600;
+}
+.get-started:hover{filter:brightness(.98);transform:translateY(-2px)}
+
+
+@media (max-width:640px){
+  nav{padding:10px 14px}
+  #logo{width:110px}
+  .nav-links{gap:12px}
+  .nav-links a{font-size:14px;padding:6px 4px}
+  .get-started{padding:7px 10px}
+  .nav-links{flex-wrap:wrap;justify-content:flex-end}
+}
+.section1{
+  display:flex;
+  align-items:center;
+  gap:var(--gap);
+  padding:40px 24px;
+}
+.section1 .s1right img{
+    width:100%;
+    float: right;
+    animation-delay: 1s;
+    animation: ease-in-out slideIn 1s;
+}
+@keyframes slideIn{
+    from{opacity:0;transform:translateX(30px)}
+    to{opacity:1;transform:translateX(0)}}
+.section1 .s1left {
+   margin-left: 4%;
+   width: 50%;
+   animation-delay: 1s;
+   animation: ease-in-out slideFromUp 1s;
+}
+@keyframes slideFromUp{
+    from{opacity:0;transform:translateY(-30px)}
+    to{opacity:1;transform:translateY(0)}}
+.section1 .s1right
+{
+    width: 50%;
+}
+.section1 .s1left h2{
+    font-size: 2.5em;
+    font-family: Inter;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #2563EB;
+    display: block;
+}
+.section1 .s1left h2 span{
+    color: #F59E0B;
+}
+.section1 .s1left p{
+    font-size: 1.2em;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+.section1 .s1left a{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #F59E0B;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px var(--accent-strong);
+    transition: background-color .18s ease, transform .12s ease;
+    
+}
+.section1 .s1left a:hover{
+    background-color: #D97706;
+    transform: translateY(-2px);
+}
+/* اذا اشتدت عليك المهام شد اللحاف ونام */
