@@ -20,10 +20,13 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('landing_page.urls')),
+<<<<<<< HEAD
     path('users/', include('users.urls')),
     path('products/', include('products.urls')),
     path('notifications/', include('notifications.urls')),
     path('orders/', include('orders.urls')),
     path('shopper/', include('shopper_interface.urls')),
     path('merchant/', include('merchant_interface.urls')),
+=======
+>>>>>>> 355b8a5 (Landing Page updates)
 ]
